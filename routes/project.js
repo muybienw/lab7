@@ -11,6 +11,7 @@ exports.projectInfo = function(req, res) { 
     res.json(projects[0]);
   }
 
+  console.log("projectID is :");
   console.log(projectID);
 
   models.Project.find({"_id" : projectID}).exec(afterQuery);
@@ -19,9 +20,9 @@ exports.projectInfo = function(req, res) { 
 exports.addProject = function(req, res) {
   var form_data = req.body;
 
-  console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-  console.log(form_data);
-  console.log(form_data['project_title']);
+  //console.log("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+  //console.log(form_data);
+  //console.log(form_data['project_title']);
 
   // make a new Project and save it to the DB
   // YOU MUST send an OK response w/ res.send();

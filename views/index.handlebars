@@ -39,7 +39,24 @@
 					<p>{{title}}</p>
 				</a>
 				<div class="details"></div>
-			</div>
+
+                <hr>
+                <div class="comment_area">
+                    <h5>Comments:</h5>
+                    <ul>
+                    {{#each comments}}
+                        <li> {{comment}} </li>
+                    {{/each}}
+                    </ul>
+
+                    <form id="new-comment" role="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="comment" placeholder="this is great!">
+                            <button id="newCommentSubmitButton" type="button" class="btn btn-default">Leave a
+                                comment</button>
+                        </div>
+                    </form>
+                </div>
 		</div>
 		{{/each}}
 

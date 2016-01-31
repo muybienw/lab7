@@ -73,5 +73,30 @@ function initializePage() {
 			window.location.href = '/'; // reload the page
 		});
 	});
+
+	$('#newCommentSubmitButton').click(function(e){
+		e.preventDefault();
+
+		// Get the div ID, e.g., "project3"
+		var projectID = $(this).closest('.project').attr('id');
+		// get rid of 'project' from the front of the id 'project3'
+		var idNumber = projectID.substr('project'.length);
+
+		console.log('try to add a new comment');
+		console.log(idNumber);
+
+		var comment = $('#new-comment #comment').val();
+		var json = {
+			'projectID' : idNumber,
+			'comment': comment
+		}
+
+		console.log('json is ');
+		console.log(json);
+
+		$.post('/comment/new', json, function(){
+			window.location.href = '/';
+		});
+	});
 }
 

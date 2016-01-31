@@ -51,3 +51,7 @@ body > div.container {
 .project-img {
      max-height: 300px;
 }
+
+.comment_area{
+     margin-left: 2em;
+}
