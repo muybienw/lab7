@@ -27,6 +27,7 @@ exports.addComment = function(req, res) {
             project[0].comments.push(newComment._id);
 
             console.log(project[0]);
+
             project[0].save(function(err) {
                 if (err) return handleError(err);
             });

@@ -41,6 +41,7 @@
 				<div class="details"></div>
 
                 <hr>
+
                 <div class="comment_area">
                     <h5>Comments:</h5>
                     <ul>
@@ -57,35 +58,38 @@
                         </div>
                     </form>
                 </div>
-		</div>
+		    </div>
+        </div>
 		{{/each}}
 
 	<hr />
 
-	<form id="new-project-form" role="form">
-    <div class="form-group">
-      <label for="title">Title for New Project:</label>
-      <input type="text" class="form-control" id="title" placeholder="Project Name">
-    </div>
-    <div class="form-group">
-      <label for="image_url">Project image URL</label>
-      <input type="text" class="form-control" id="image_url" placeholder="http://www.example.com/really_cool_image.jpg">
-    </div>
-    <div class="form-group">
-      <label for="date">Date</label>
-      <input type="text" class="form-control" id="date" placeholder="January 1">
-    </div>
-    <div class="form-group">
-      <label for="summary">Summary</label>
-      <textarea type="text" class="form-control" id="summary" rows="3" placeholder="Wow, Very Project!  So much summary!"></textarea>
-    </div>
-    <button id="newProjectSubmitButton" type="button" class="btn btn-default">Submit</button>
-  </form>
+        <form id="new-project-form" role="form">
+        <div class="form-group">
+          <label for="title">Title for New Project:</label>
+          <input type="text" class="form-control" id="title" placeholder="Project Name">
+        </div>
+        <div class="form-group">
+          <label for="image_url">Project image URL</label>
+          <input type="text" class="form-control" id="image_url" placeholder="http://www.example.com/really_cool_image.jpg">
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="text" class="form-control" id="date" placeholder="January 1">
+        </div>
+        <div class="form-group">
+          <label for="summary">Summary</label>
+          <textarea type="text" class="form-control" id="summary" rows="3" placeholder="Wow, Very Project!  So much summary!"></textarea>
+        </div>
+        <button id="newProjectSubmitButton" type="button" class="btn btn-default">Submit</button>
+      </form>
 
-	</div>
 
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/introHCI.js"></script>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/introHCI.js"></script>
+
+    </div>
+
 </body>
 </html>
